@@ -1,0 +1,1062 @@
+
+:root {
+    --iron-primary: #c6a46a;
+    --iron-primary-light: #e2c795;
+    --iron-primary-dark: #987541;
+    --iron-dark: #17201e;
+    --iron-dark-soft: #202a27;
+    --iron-text: #26302c;
+    --iron-muted: #777f79;
+    --iron-white: #ffffff;
+    --iron-light: #f6f7f4;
+    --iron-border: rgba(198, 164, 106, 0.25);
+    --iron-transition: 0.35s ease;
+    --iron-shadow: 0 18px 55px rgba(30, 29, 25, 0.12);
+}
+
+.iron-service-page {
+    font-family: "Cairo", sans-serif;
+    color: var(--iron-text);
+    overflow: hidden;
+    background: var(--iron-white);
+}
+
+.iron-service-page img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.iron-service-page a {
+    text-decoration: none;
+}
+
+.iron-service-breadcrumb {
+    padding: 22px 0;
+    background: var(--iron-light);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.iron-breadcrumb-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--iron-muted);
+}
+
+.iron-breadcrumb-content a {
+    color: var(--iron-muted);
+    transition: var(--iron-transition);
+}
+
+.iron-breadcrumb-content a:hover {
+    color: var(--iron-primary-dark);
+}
+
+.iron-breadcrumb-content i {
+    font-size: 10px;
+    color: var(--iron-primary);
+}
+
+.iron-breadcrumb-content span {
+    color: var(--iron-dark);
+    font-weight: 700;
+}
+
+.iron-service-hero {
+    position: relative;
+    padding: 90px 0 110px;
+    background:
+        radial-gradient(
+            circle at 5% 15%,
+            rgba(198, 164, 106, 0.12),
+            transparent 30%
+        ),
+        var(--iron-white);
+}
+
+.iron-service-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.iron-service-eyebrow,
+.iron-section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--iron-primary-dark);
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.iron-service-eyebrow {
+    padding: 10px 18px;
+    border: 1px solid var(--iron-border);
+    border-radius: 50px;
+    background: rgba(198, 164, 106, 0.08);
+}
+
+.iron-service-eyebrow i {
+    font-size: 16px;
+}
+
+.iron-service-hero h1 {
+    color: var(--iron-dark);
+    font-size: clamp(32px, 4.3vw, 55px);
+    font-weight: 800;
+    line-height: 1.65;
+    margin-bottom: 24px;
+}
+
+.iron-service-hero h1 span {
+    display: block;
+    color: var(--iron-primary-dark);
+}
+
+.iron-service-hero-content > p {
+    color: var(--iron-muted);
+    font-size: 16px;
+    line-height: 2.1;
+    max-width: 570px;
+    margin-bottom: 30px;
+}
+
+.iron-service-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.iron-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 27px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: var(--iron-transition);
+}
+
+.iron-btn-primary {
+    color: var(--iron-white);
+    background: var(--iron-primary-dark);
+    border: 1px solid var(--iron-primary-dark);
+}
+
+.iron-btn-primary:hover {
+    background: var(--iron-dark);
+    border-color: var(--iron-dark);
+    color: var(--iron-white);
+    transform: translateY(-3px);
+}
+
+.iron-btn-outline {
+    color: var(--iron-dark);
+    border: 1px solid var(--iron-border);
+    background: var(--iron-white);
+}
+
+.iron-btn-outline:hover {
+    color: var(--iron-white);
+    background: var(--iron-dark);
+    border-color: var(--iron-dark);
+    transform: translateY(-3px);
+}
+
+.iron-btn-outline i {
+    color: #25d366;
+    font-size: 18px;
+}
+
+.iron-service-hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.iron-hero-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--iron-text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.iron-hero-feature i {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--iron-primary-dark);
+    background: rgba(198, 164, 106, 0.13);
+}
+
+.iron-service-hero-image {
+    position: relative;
+    height: 540px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--iron-shadow);
+}
+
+.iron-service-hero-image > img {
+    height: 100%;
+    transition: transform 0.8s ease;
+}
+
+.iron-service-hero-image:hover > img {
+    transform: scale(1.05);
+}
+
+.iron-hero-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(23, 32, 30, 0.85) 0%,
+        rgba(23, 32, 30, 0.1) 60%,
+        transparent 100%
+    );
+}
+
+.iron-hero-image-caption {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    color: var(--iron-white);
+}
+
+.iron-hero-image-caption span {
+    display: block;
+    font-size: 13px;
+    color: var(--iron-primary-light);
+    margin-bottom: 8px;
+}
+
+.iron-hero-image-caption h3 {
+    font-size: 27px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.iron-hero-image-badge {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    background: var(--iron-white);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.iron-hero-image-badge > i {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--iron-white);
+    background: var(--iron-primary-dark);
+}
+
+.iron-hero-image-badge strong,
+.iron-hero-image-badge span {
+    display: block;
+}
+
+.iron-hero-image-badge strong {
+    font-size: 13px;
+    color: var(--iron-dark);
+    margin-bottom: 4px;
+}
+
+.iron-hero-image-badge span {
+    font-size: 11px;
+    color: var(--iron-muted);
+}
+
+.iron-service-details {
+    padding: 110px 0;
+    background: var(--iron-light);
+}
+
+.iron-details-image-wrapper {
+    position: relative;
+    padding: 0 0 35px 35px;
+}
+
+.iron-details-image {
+    position: relative;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 18px;
+    z-index: 1;
+    box-shadow: var(--iron-shadow);
+}
+
+.iron-details-image img {
+    height: 100%;
+    transition: transform 0.7s ease;
+}
+
+.iron-details-image:hover img {
+    transform: scale(1.05);
+}
+
+.iron-details-image-decoration {
+    position: absolute;
+    width: 65%;
+    height: 65%;
+    bottom: 0;
+    left: 0;
+    border: 2px solid var(--iron-primary);
+    border-radius: 18px;
+}
+
+.iron-details-image-label {
+    position: absolute;
+    bottom: 65px;
+    right: -15px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 17px 25px;
+    color: var(--iron-white);
+    background: var(--iron-dark);
+    border-radius: 8px;
+    box-shadow: var(--iron-shadow);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.iron-details-image-label i {
+    color: var(--iron-primary-light);
+    font-size: 20px;
+}
+
+.iron-details-content {
+    padding-right: 20px;
+}
+
+.iron-section-eyebrow {
+    margin-bottom: 18px;
+}
+
+.iron-section-eyebrow > span {
+    width: 35px;
+    height: 3px;
+    background: var(--iron-primary);
+    border-radius: 10px;
+}
+
+.iron-details-content h2,
+.iron-works-heading h2 {
+    color: var(--iron-dark);
+    font-size: clamp(27px, 3vw, 39px);
+    font-weight: 800;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.iron-details-content h2 span,
+.iron-works-heading h2 span {
+    color: var(--iron-primary-dark);
+}
+
+.iron-details-content > p {
+    color: var(--iron-muted);
+    font-size: 14px;
+    line-height: 2.2;
+    margin-bottom: 18px;
+}
+
+.iron-service-benefits {
+    display: grid;
+    gap: 22px;
+    margin: 30px 0;
+}
+
+.iron-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.iron-benefit-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--iron-primary-dark);
+    background: rgba(198, 164, 106, 0.13);
+    border-radius: 12px;
+    font-size: 20px;
+    transition: var(--iron-transition);
+}
+
+.iron-benefit-item:hover .iron-benefit-icon {
+    color: var(--iron-white);
+    background: var(--iron-primary-dark);
+    transform: translateY(-4px);
+}
+
+.iron-benefit-item h4 {
+    color: var(--iron-dark);
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.iron-benefit-item p {
+    color: var(--iron-muted);
+    font-size: 13px;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.iron-details-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 24px;
+    border-radius: 8px;
+    background: var(--iron-dark);
+    color: var(--iron-white);
+    font-size: 14px;
+    font-weight: 700;
+    transition: var(--iron-transition);
+}
+
+.iron-details-cta:hover {
+    background: var(--iron-primary-dark);
+    color: var(--iron-white);
+    transform: translateY(-3px);
+}
+
+.iron-details-cta i {
+    color: var(--iron-primary-light);
+}
+
+.iron-works-section {
+    padding: 110px 0;
+    background: var(--iron-white);
+}
+
+.iron-works-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.iron-works-heading h2 {
+    margin-bottom: 12px;
+}
+
+.iron-works-heading p {
+    max-width: 650px;
+    color: var(--iron-muted);
+    font-size: 14px;
+    line-height: 2;
+    margin: 0;
+}
+
+.iron-works-contact {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 22px;
+    color: var(--iron-white);
+    background: var(--iron-primary-dark);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: var(--iron-transition);
+}
+
+.iron-works-contact:hover {
+    color: var(--iron-white);
+    background: var(--iron-dark);
+    transform: translateY(-3px);
+}
+
+.iron-works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.iron-work-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 14px;
+    background: var(--iron-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: var(--iron-transition);
+}
+
+.iron-work-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--iron-shadow);
+    border-color: var(--iron-border);
+}
+
+.iron-work-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background: var(--iron-light);
+}
+
+.iron-work-image img {
+    height: 100%;
+    transition: transform 0.7s ease;
+}
+
+.iron-work-card:hover .iron-work-image img {
+    transform: scale(1.08);
+}
+
+.iron-work-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(23, 32, 30, 0.25),
+        transparent 45%
+    );
+    opacity: 0;
+    transition: var(--iron-transition);
+}
+
+.iron-work-card:hover .iron-work-image::after {
+    opacity: 1;
+}
+
+.iron-work-zoom {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 2;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--iron-dark);
+    background: var(--iron-white);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: var(--iron-transition);
+}
+
+.iron-work-card:hover .iron-work-zoom {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.iron-work-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 22px 20px;
+}
+
+.iron-work-info > span {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--iron-primary-dark);
+}
+
+.iron-work-info h3 {
+    flex: 1;
+    color: var(--iron-dark);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.iron-work-info > i {
+    font-size: 13px;
+    color: var(--iron-primary-dark);
+    transition: var(--iron-transition);
+}
+
+.iron-work-card:hover .iron-work-info > i {
+    transform: translateX(-5px);
+}
+
+.iron-service-cta {
+    padding: 70px 0;
+    background: var(--iron-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.iron-service-cta::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: -250px;
+    right: -100px;
+    border-radius: 50%;
+    background: rgba(198, 164, 106, 0.09);
+}
+
+.iron-service-cta::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: -250px;
+    left: -80px;
+    border-radius: 50%;
+    background: rgba(198, 164, 106, 0.08);
+}
+
+.iron-cta-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.iron-cta-icon {
+    flex-shrink: 0;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    color: var(--iron-primary-light);
+    background: rgba(198, 164, 106, 0.13);
+    font-size: 32px;
+}
+
+.iron-cta-text {
+    flex: 1;
+}
+
+.iron-cta-text > span {
+    display: block;
+    color: var(--iron-primary-light);
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.iron-cta-text h2 {
+    color: var(--iron-white);
+    font-size: clamp(20px, 2.5vw, 29px);
+    font-weight: 800;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.iron-cta-text p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    line-height: 2;
+    margin: 0;
+}
+
+.iron-cta-button {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 25px;
+    color: var(--iron-dark);
+    background: var(--iron-primary-light);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    transition: var(--iron-transition);
+}
+
+.iron-cta-button:hover {
+    color: var(--iron-white);
+    background: var(--iron-primary-dark);
+    transform: translateY(-4px);
+}
+
+.iron-cta-button i {
+    font-size: 20px;
+}
+
+.iron-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 90px;
+    background: rgba(12, 16, 15, 0.96);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--iron-transition);
+}
+
+.iron-lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.iron-lightbox-content {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+.iron-lightbox-content img {
+    width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.iron-lightbox-content h3 {
+    color: var(--iron-white);
+    font-size: 17px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+.iron-lightbox-content span {
+    color: var(--iron-primary-light);
+    font-size: 13px;
+}
+
+.iron-lightbox button {
+    position: absolute;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    color: var(--iron-white);
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 18px;
+    transition: var(--iron-transition);
+}
+
+.iron-lightbox button:hover {
+    color: var(--iron-dark);
+    background: var(--iron-primary-light);
+}
+
+.iron-lightbox-close {
+    top: 30px;
+    left: 30px;
+}
+
+.iron-lightbox-prev {
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.iron-lightbox-next {
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+body.iron-lightbox-locked {
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .iron-service-hero {
+        padding: 70px 0;
+    }
+
+    .iron-service-hero-image {
+        height: 450px;
+    }
+
+    .iron-service-details,
+    .iron-works-section {
+        padding: 80px 0;
+    }
+
+    .iron-details-content {
+        padding-right: 0;
+    }
+
+    .iron-details-image {
+        height: 450px;
+    }
+
+    .iron-works-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .iron-work-image {
+        height: 280px;
+    }
+
+    .iron-cta-content {
+        flex-wrap: wrap;
+    }
+
+    .iron-cta-text {
+        flex-basis: calc(100% - 120px);
+    }
+
+    .iron-cta-button {
+        margin-right: 115px;
+    }
+}
+
+@media (max-width: 767px) {
+    .iron-service-breadcrumb {
+        padding: 17px 0;
+    }
+
+    .iron-breadcrumb-content {
+        gap: 8px;
+        font-size: 11px;
+    }
+
+    .iron-service-hero {
+        padding: 55px 0;
+    }
+
+    .iron-service-hero h1 {
+        font-size: 31px;
+        line-height: 1.7;
+    }
+
+    .iron-service-hero-content > p {
+        font-size: 14px;
+    }
+
+    .iron-service-hero-actions {
+        gap: 10px;
+    }
+
+    .iron-btn {
+        padding: 13px 17px;
+        font-size: 12px;
+    }
+
+    .iron-service-hero-features {
+        gap: 15px;
+    }
+
+    .iron-hero-feature {
+        font-size: 11px;
+    }
+
+    .iron-hero-feature i {
+        width: 32px;
+        height: 32px;
+    }
+
+    .iron-service-hero-image {
+        height: 360px;
+        border-radius: 14px;
+    }
+
+    .iron-hero-image-caption {
+        bottom: 25px;
+        right: 25px;
+    }
+
+    .iron-hero-image-caption h3 {
+        font-size: 22px;
+    }
+
+    .iron-hero-image-badge {
+        top: 20px;
+        left: 20px;
+        padding: 10px 13px;
+    }
+
+    .iron-hero-image-badge > i {
+        width: 35px;
+        height: 35px;
+    }
+
+    .iron-service-details,
+    .iron-works-section {
+        padding: 65px 0;
+    }
+
+    .iron-details-image-wrapper {
+        padding: 0 0 25px 25px;
+    }
+
+    .iron-details-image {
+        height: 350px;
+    }
+
+    .iron-details-image-label {
+        right: -5px;
+        bottom: 45px;
+        padding: 13px 17px;
+        font-size: 12px;
+    }
+
+    .iron-details-content h2,
+    .iron-works-heading h2 {
+        font-size: 27px;
+    }
+
+    .iron-details-content > p {
+        font-size: 13px;
+    }
+
+    .iron-works-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        margin-bottom: 35px;
+    }
+
+    .iron-works-heading p {
+        font-size: 13px;
+    }
+
+    .iron-works-grid {
+        gap: 15px;
+    }
+
+    .iron-work-image {
+        height: 230px;
+    }
+
+    .iron-work-info {
+        gap: 9px;
+        padding: 15px 12px;
+    }
+
+    .iron-work-info h3 {
+        font-size: 12px;
+    }
+
+    .iron-work-info > span {
+        font-size: 11px;
+    }
+
+    .iron-work-info > i {
+        font-size: 11px;
+    }
+
+    .iron-work-zoom {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .iron-service-cta {
+        padding: 55px 0;
+    }
+
+    .iron-cta-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+
+    .iron-cta-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 25px;
+    }
+
+    .iron-cta-text {
+        flex-basis: auto;
+    }
+
+    .iron-cta-text h2 {
+        font-size: 22px;
+    }
+
+    .iron-cta-button {
+        margin-right: 0;
+    }
+
+    .iron-lightbox {
+        padding: 50px 20px;
+    }
+
+    .iron-lightbox button {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .iron-lightbox-close {
+        top: 15px;
+        left: 15px;
+    }
+
+    .iron-lightbox-prev {
+        right: 10px;
+    }
+
+    .iron-lightbox-next {
+        left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .iron-works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .iron-work-image {
+        height: 280px;
+    }
+
+    .iron-service-hero-image {
+        height: 300px;
+    }
+
+    .iron-service-hero-features {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .iron-service-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .iron-btn {
+        width: 100%;
+    }
+}
